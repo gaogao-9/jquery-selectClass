@@ -45,9 +45,7 @@
 		}
 		else{
 			//ES5互換
-			if($.isArray(iteratable)){
-				list = iteratable;
-			}
+			list = Array.prototype.slice.call(iteratable);
 		}
 		
 		if(!list.length) return;
