@@ -22,7 +22,7 @@
 // => <div id="hoge" class="dark"></div>
 //
 // $("div#hoge").selectClass(["bright","dark","sepia"],"sepia"); //←3個目以降も適用できる
-// => <div id="hoge" class="bright"></div>
+// => <div id="hoge" class="sepia"></div>
 //
 // $("div#hoge").selectClass(new Set("bright","dark","sepia"),"bright"); //←iteratableなら配列じゃなくてもOK(ES6)
 // => <div id="hoge" class="bright"></div>
