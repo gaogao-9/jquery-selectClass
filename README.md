@@ -27,5 +27,5 @@ $("div#hoge").selectClass(["bright","dark","sepia"],"dark"); //←文字を指�
 $("div#hoge").selectClass(["bright","dark","sepia"],"sepia"); //←3個目以降も適用できる<br>
 =&gt; &lt;div id="hoge" class="sepia"&gt;&lt;/div&gt;
 
-$("div#hoge").selectClass(new Set("bright","dark","sepia"),"bright"); //←iteratableなら配列じゃなくてもOK(ES6)<br>
+$("div#hoge").selectClass(new Set(["bright","dark","sepia"]),"bright"); //←iteratableなら配列じゃなくてもOK(ES6)<br>
 =&gt; &lt;div id="hoge" class="bright"&gt;&lt;/div&gt;
